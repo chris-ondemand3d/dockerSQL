@@ -19,7 +19,6 @@ https://dbafromthecold.com/2020/07/17/sql-server-and-docker-compose/
       /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "YourNewStrong@Passw0rd"
 
 
-<<<<<<< HEAD
 ## Restore backup
       /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Testing1122"
       1> RESTORE DATABASE OD3DSDB_In2Guide
@@ -27,12 +26,3 @@ https://dbafromthecold.com/2020/07/17/sql-server-and-docker-compose/
       3> WITH MOVE 'OD3DSDB_In2Guide' TO '/var/opt/mssql/data/OD3DSDB.mdf',
       4> MOVE 'OD3DSDB_In2Guide_log' TO '/var/opt/mssql/data/OD3DSDB.ldf'
       5> go
-=======
-# restore backuped up database from US in2guide server (mid 2022 snapshot)
-/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Testing1122"
-1> RESTORE DATABASE OD3DSDB_In2Guide
-2> FROM DISK = '/var/opt/mssql/backup/OD3DSDB.BAK'
-3> WITH MOVE 'OD3DSDB_In2Guide' TO '/var/opt/mssql/data/OD3DSDB.mdf',
-4> MOVE 'OD3DSDB_In2Guide_log' TO '/var/opt/mssql/data/OD3DSDB.ldf'
-5> go
->>>>>>> 0a86b1abbff010da8e930fbb32f04502c600e5c0
