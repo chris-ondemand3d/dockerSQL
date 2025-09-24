@@ -20,6 +20,8 @@ https://dbafromthecold.com/2020/07/17/sql-server-and-docker-compose/
 
 
 ## Restore backup
+      Request kaster@cybermed.co.kr for OD3SDB.mdf and OD3DSDB.ldf files.  
+
       /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Testing1122"
       1> RESTORE DATABASE OD3DSDB_In2Guide
       2> FROM DISK = '/var/opt/mssql/backup/OD3DSDB.BAK'
